@@ -1,0 +1,27 @@
+{
+    "cSpell.allowCompoundWords": true,
+    "cSpell.language": "en,de",
+    "cSpell.ignoreRegExpList": [
+        "\\$.*?\\$", // Inlinestyle Latex in Markdown
+        "\\$\\$[\\s\\S]+?\\$\\$", // Displaystyle Latex in Markdown
+        "```[\\s\\S]+?```", // Codefences in Markdown
+        "\\(#.*?\\)", // Markdown TOC mit Mathematik
+        "!?\\[.*?\\]\\(.*\\)" // Markdown images/links
+    ],
+    "editor.formatOnSave": true, // Simpel. Sollte keine Erklärung benötigen.
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "files.trimTrailingWhitespace": true, // Unnützer Whitespace (Leerzeichen, Tabs, Newlines etc.) am Ende der Zeile oder am Ende der Datei hat keinen Nutzen und ist daher unerwünscht. Daher wird dieser entfernt.
+    "files.trimFinalNewlines": true,
+    "files.insertFinalNewline": true, // Ausnahme ist eine einzige leere Zeile am Ende der Datei, welches ein Teil des C Standards ist, welcher gegen bestimmte Situationen vorbeugt. Da die Implementation des Standards aber für den Nutzer nahezu unbemerkbar ist, wird dies hier implementiert.
+    "markdownlint.config": { // Regeln, bei denen markdownlint meckern würde, die aber an sich vollkommen in ordnung sind.
+        "line-length": false, // 80 Zeichen pro Zeile ist eine Regel, die hier keinen Bedarf hat. Falls eine Zeile zu lang ist, wird VSCode diese umgebrochen darstellen, dessen Option mit `Alt+Z` umschaltbar ist. Am besten merken, da man die Option bei horizontal langen Tabellen ggf. temporär ausschalten möchte.
+        "no-inline-html": false, // Markdown ist an sich nur vereinfachtes HTML und Vereinfachungen kommen immer mit Begrenzungen. Wenn etwas mit Markdown alleine nicht machbar ist, warum dann nicht auf das Basis Level umsteigen?
+        "ul-indent": false,
+        "no-duplicate-header": false, // Man sollte gleiche Überschriften mehrmals verwenden dürfen
+        "no-trailing-punctuation": false, // Darf eine Überschrift nicht mit einem Satzzeichen enden? Siehe `./Ethik/2020-02-05`
+        "single-title": false,
+        "no-blanks-blockquote": false
+    },
+    "markdown.extension.list.indentationSize": "inherit"
+}
