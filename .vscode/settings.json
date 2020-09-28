@@ -23,5 +23,19 @@
         "single-title": false,
         "no-blanks-blockquote": false
     },
-    "markdown.extension.list.indentationSize": "inherit"
+    "markdown.extension.list.indentationSize": "inherit",
+    "cSpell.words": [
+        "Auslenkungsfunktion",
+        "Bechdel",
+        "Elongationsfunktion",
+        "Elongationsgesetz",
+        "Glokalisierung",
+        "Haller",
+        "Leifi",
+        "Mori",
+        "Proportionalit",
+        "Proportionalitätskonstante",
+        "intradiegetisch",
+        "tskonstante"
+    ]
 }
