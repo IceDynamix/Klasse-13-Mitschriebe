@@ -1,4 +1,4 @@
-package IT.Algorithmen.codeTabelle;
+package codeTabelle;
 
 public class CodeTabelle {
 	public String[][] codeTabelle;
